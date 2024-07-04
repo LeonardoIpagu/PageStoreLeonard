@@ -1,0 +1,168 @@
+<main>
+  <section class="home container" id="home">
+    <!-- 10: HOME SWIPER: la documentacion dice que nuestro documento debe estar organizado de
+    una manera muy especifica: 
+  
+      >Debe haber un slide main container: <div class="swiper">
+        >Debe hacer un additional required wraper: <div class="swiper-wraper">
+          >Debe tener slides: <div class="swiper-slide">
+
+      >Si queremos efecto de paginacion para cambiar de items y nos de un efecto de un punto
+      blanco para saber en que elemento me encuentro: <div class="swiper-pagination">(10.1)
+      
+    -->
+    <div class="swiper home-swiper">
+
+
+      <div class="swiper-wrapper">
+        <!--1 2 3-->
+        <section class="swiper-slide">
+          <div class="home__content grid">
+            <div class="home__group">
+              <img
+                src="../../assets/img/Hallowen/i1.png"
+                alt=""
+                class="home__img"
+              />
+              <div class="home__indicator"></div>
+
+              <div class="home__details-img">
+                <h4 class="home__details-title">The Labu “Reiza”</h4>
+                <span class="home__details-subtitle"> La calabaza viva</span>
+              </div>
+            </div>
+
+            <div class="home__data">
+              <h3 class="home__subtitle">#1 Fantasma más aterrador</h3>
+              <h1 class="home__title">
+                UOOOO <br />
+
+                TRUCO O <br />
+                TRATO!!
+              </h1>
+              <p class="home__description">
+                Hi, I'm Reiza, people call me "El Labu". I am currently trying
+                to learn something new, building my own bike with parts made
+                only in Malaysia.
+              </p>
+
+              <div class="home__buttons">
+                <a href="#" class="button"> Reservar ahora</a>
+                <a href="#" class="button--link button--flex">
+                  Audio grabado
+                  <i class="bx bx-right-arrow-alt button__icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="swiper-slide">
+          <div class="home__content grid">
+            <div class="home__group">
+              <img
+                src="../../assets/img/Hallowen/home2-img.png"
+                alt=""
+                class="home__img"
+              />
+              <div class="home__indicator"></div>
+
+              <div class="home__details-img">
+                <h4 class="home__details-title">Adino & Grahami</h4>
+                <span class="home__details-subtitle">
+                  No hay palabras para describirlos</span
+                >
+              </div>
+            </div>
+
+            <div class="home__data">
+              <h3 class="home__subtitle">#2 top Best duo</h3>
+              <h1 class="home__title">
+                UOOOO <br />
+
+                TRUCO O <br />
+                TRATO!!
+              </h1>
+              <p class="home__description">
+                Adino steals cotton candy from his brother and eats them all in
+                one bite, a hungry beast. Grahami can no longer contain his
+                anger towards Adino.
+              </p>
+
+              <div class="home__buttons">
+                <a href="#" class="button">Book Now</a>
+                <a href="#" class="button--link button--flex"
+                  >Track Record
+                  <i class="bx bx-right-arrow-alt button__icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="swiper-slide">
+          <div class="home__content grid">
+            <div class="home__group">
+              <img
+                src="../../assets/img/Hallowen/home3-img.png"
+                alt=""
+                class="home__img"
+              />
+              <div class="home__indicator"></div>
+
+              <div class="home__details-img">
+                <h4 class="home__details-title">Captain Sem</h4>
+                <span class="home__details-subtitle">Veteran Spooky Ghost</span>
+              </div>
+            </div>
+
+            <div class="home__data">
+              <h3 class="home__subtitle">#3 Top Scariest Ghost</h3>
+              <h1 class="home__title">
+                UOOOO <br />
+
+                TRUCO O <br />
+                TRATO!!
+              </h1>
+              <p class="home__description">
+                In search for cute little puppy, Captain Sem has come back from
+                his tragic death. With his hogwarts certified power he promise
+                to be a hero for all of ghostkind.
+              </p>
+
+              <div class="home__buttons">
+                <a href="#" class="button">Book Now</a>
+                <a href="#" class="button--link button--flex"
+                  >Track Record
+                  <i class="bx bx-right-arrow-alt button__icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <!-- 10.1: swiper-pagination: aqui en cuanto a estilos se le pueden asignar los deseados
+      sin embargo en este caso ya se le han dado y si o si debe estar aqui ya que es un indicador
+      
+      Para que funcione vamos a implementarlo en este componente de 'home container.ts'(10.2)
+    -->
+    <div class="swiper-pagination"></div>
+
+
+    </div>
+
+
+
+  </section>
+
+  <!-- <app-home-container></app-home-container>   -->
+  <app-categories></app-categories>
+  <app-about></app-about>
+  <app-sales></app-sales>
+  <app-discounts></app-discounts>
+  <app-new-items></app-new-items>
+  <app-newsletter></app-newsletter>
+</main>
+<app-footer></app-footer>

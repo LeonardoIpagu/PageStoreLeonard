@@ -1,0 +1,75 @@
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">
+      <img
+        src="../../assets/img/Hallowen/i2.png"
+        alt=""
+        class="nav__logo-img"
+      />
+      Halloween
+    </a>
+
+    <!-- 
+      1.3.1: usamos interpolacion y decimos que reciba en la 'CLASS' del item ([class]='isMenuOpen') 
+      esto hara que agregue una nueva variable
+    -->
+
+    <div class="nav__menu" id="nav-menu" [class]="isMenuOpen">
+      <ul class="nav__list" (click)="closeHeader($event)">
+        <!-- 8.4: routerLink: conecta las rutas definidas con los archivos de plantilla routerLink 
+        Reemplazamos lo de HREF por RouterLink ahora si debe jalar-->
+
+        <!-- 
+          8.5: Configuracion de RUTA ACTIVA: los usuarios pueden navegar por toda la app mediante
+          los vinculos, sin embargo no pueden identificar cual es la ruta activa(le dieron click
+          pero no saben ni en donde vrg andan)
+
+          Para poder agregar algun puntito con estilo para saber cual fue el item seleccionado, uso
+          de directiva 'ROUTER LINK ACTIVE'
+
+          De primera dice agregar a cada item el 'routerLinkActive' y en seguida asignarle una clase 
+          para poder darle estilos a dicha clase desde CSS, pero primero hay que importar dicha
+          directiva al componente para poder utilizarla (header.component.ts(8.6))
+
+         -->
+        <li class="nav__item">
+          <!-- 8.7 Añadimos 'routerLinkActive' con la clase 'active-link'
+          Ahora el estilo del boton se actualiza automaticamente resaltando el componente activo para el usuario
+          
+          8.8: atributo  ariaCurrentWhenActive="page" es un atributo de ARIA (Accessible Rich Internet Applications) 
+          que se utiliza para mejorar la accesibilidad en aplicaciones web para personas con discapacidad y hace que
+          indica que la página actual corresponde al enlace activo. 
+
+          8.9: vamos a configurar una ruta alternativa en app.routes.ts(9)
+          -->
+          <a routerLink="/home" routerLinkActive="active-link" ariaCurrentWhenActive="page" class="nav__link active-link">Home</a>
+        </li>
+
+        <li class="nav__item">
+          <a routerLink="/about" routerLinkActive="active-link" ariaCurrentWhenActive="page" class="nav__link">About</a>
+        </li>
+
+        <li class="nav__item">
+          <a routerLink="/sales" routerLinkActive="active-link" ariaCurrentWhenActive="page" class="nav__link">Candy</a>
+        </li>
+
+        <li class="nav__item">
+          <a routerLink="/new" routerLinkActive="active-link" ariaCurrentWhenActive="page" class="nav__link">New</a>
+        </li>
+        <a href="#" class="button button--ghost">Support</a>
+      </ul>
+
+      <!-- 1.5: escuchamos el click e invoco a la funcion 'closeHeader' pasando como argumento a event -->
+      <div class="nav__close" id="nav-close" (click)="eliminar()">
+        <i class="bx bx-x"></i>
+      </div>
+
+      <img src="../../assets/img/Hallowen/nav-img.png" alt="" class="nav__img" />
+    </div>
+
+    <!-- 1.2.1: escuchamos el click e invoco a la funcion 'activeHeader'(header.component: 1.3) -->
+    <div class="nav__toggle" id="nav-toggle" (click)="activeHeader()">
+      <i class="bx bx-grid-alt"></i>
+    </div>
+  </nav>
+</header>

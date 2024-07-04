@@ -1,0 +1,77 @@
+[
+    {
+        "_id": "1",
+        "nombre": "MacBook Air",
+        "description": "LapTop",
+        "category": ["PC", "Technology"],
+        "imgUrl": [
+            "../img/products/1.jpg",
+            "../img/products/2.jpg",
+            "../img/products/3.jpg",
+            "../img/products/4.jpg",
+            "../img/products/1.jpg"
+        ],
+        "price_sell": 225,
+        "regular_price": 400,
+        "create_at": "2022-03-14T16:51:07.214X",
+        "comentario": "Etiqueta (slug: identificador en la url: http:www.facebook.com/'slug(se sustituye)')",
+        "slug": "type-in-ear"
+    },
+
+    {
+        "_id": "2",
+        "nombre": "MacBook Pro",
+        "description": "LapTop",
+        "category": ["PC", "Technology"],
+        "imgUrl": [
+            "../img/products/2.jpg",
+            "../img/products/1.jpg",
+            "../img/products/3.jpg",
+            "../img/products/4.jpg",
+            "../img/products/1.jpg"
+        ],
+        "price_sell": 1125,
+        "regular_price": 2000,
+        "create_at": "2022-03-14T16:51:07.214X",
+        "comentario": "Etiqueta (slug: identificador en la url: http:www.facebook.com/'slug(se sustituye)')",
+        "slug": "type-in-portatil"
+    },
+
+    {
+        "_id": "3",
+        "nombre": "iPad Air",
+        "description": "Tablet",
+        "category": ["Tablet", "Technology"],
+        "imgUrl": [
+            "../img/products/3.jpg",
+            "../img/products/1.jpg",
+            "../img/products/2.jpg",
+            "../img/products/4.jpg",
+            "../img/products/1.jpg"
+        ],
+        "price_sell": 725,
+        "regular_price": 800,
+        "create_at": "2022-03-14T16:51:07.214X",
+        "comentario": "Etiqueta (slug: identificador en la url: http:www.facebook.com/'slug(se sustituye)')",
+        "slug": "type-in-tablet"
+    },
+
+    {
+        "_id": "4",
+        "nombre": "Apple Watch",
+        "description": "Smart Watch",
+        "category": ["Portatil", "Technology"],
+        "imgUrl": [
+            "../img/products/4.jpg",
+            "../img/products/1.jpg",
+            "../img/products/2.jpg",
+            "../img/products/3.jpg",
+            "../img/products/1.jpg"
+        ],
+        "price_sell": 550,
+        "regular_price": 700,
+        "create_at": "2022-03-14T16:51:07.214X",
+        "comentario": "Etiqueta (slug: identificador en la url: http:www.facebook.com/'slug(se sustituye)')",
+        "slug": "type-on-hands"
+    }
+]
